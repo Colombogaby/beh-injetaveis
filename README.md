@@ -20,12 +20,13 @@ melasma), permitir o contato direto e a solicitação de orçamento.
 ## 2. Desenvolvimento
 
 ### Levantamento de informações
-[PREENCHER: relato de como foi feita a entrevista/visita com a responsável pela Beh
-Injetáveis — presencial ou por Zoom/Google Meet — e a forma de contato utilizada.]
+O grupo realizou uma reunião remota por Google Meet para conduzir a entrevista com a
+responsável pela Beh Injetáveis, seguindo o roteiro de perguntas elaborado previamente
+(apresentação e origem do negócio, serviços e atendimento, biossegurança e logística).
 
 **Comprovação do contato real:**
-`assets/img/comprovante.jpg` — [PREENCHER: inserir foto/print que comprove o contato com a
-entrevistada]
+`assets/img/comprovante.jpg` — print da reunião via Google Meet com o grupo (Luiz, Carolina,
+Sophia e Gabriela) durante a condução da entrevista.
 
 ### Estrutura do site
 O site foi desenvolvido em HTML5 puro (sem CSS nesta etapa), com 10 páginas interligadas:
@@ -46,12 +47,22 @@ Todas as páginas usam marcação semântica (`header`, `nav`, `main`, `section`
 `footer`) e compartilham o mesmo menu de navegação.
 
 ### Decisões e desafios
-[PREENCHER: decisões de estrutura/conteúdo tomadas pelo grupo, desafios técnicos
-encontrados.]
+Uma das principais decisões do grupo foi priorizar uma estrutura HTML semântica desde o
+início, buscando para cada trecho de conteúdo a tag que melhor representasse seu papel
+dentro do tema — cabeçalho, navegação, seções de procedimentos, formulários de contato e
+orçamento. Também decidimos contar com o auxílio de uma IA para elaborar o roteiro de
+perguntas da entrevista, o que ajudou o grupo a chegar a uma conversa mais direcionada e a
+reunir informações suficientes e relevantes sobre o negócio e os procedimentos oferecidos.
 
 ## 3. Conclusão
 
-[PREENCHER: reflexão do grupo sobre o resultado e os aprendizados desta etapa.]
+Com a Entrega 1, o grupo pôde colocar em prática os fundamentos da estruturação semântica
+em HTML5, aplicando as tags corretas para cada tipo de conteúdo e organizando um site
+funcional para uma organização real. O contato direto com a Beh Injetáveis trouxe um
+aprendizado além do técnico: a necessidade de traduzir informações reais de um negócio em
+conteúdo claro e acessível para o usuário do site. O processo também reforçou a importância
+do planejamento antes da codificação — como definir a entrevista, organizar as páginas e a
+navegação — para que o desenvolvimento visual, na próxima entrega, tenha uma base sólida.
 
 ## Estrutura de pastas
 
@@ -77,4 +88,4 @@ beh-injetaveis/
 
 ## Site hospedado
 
-[PREENCHER: link do site publicado no GitHub Pages ou Netlify]
+[Acesse o site aqui](https://colombogaby.github.io/beh-injetaveis/)

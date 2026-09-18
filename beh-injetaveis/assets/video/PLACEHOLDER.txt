@@ -1,1 +1,0 @@
-Coloque aqui o vídeo institucional (ex: institucional.mp4), referenciado em index.html.

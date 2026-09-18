@@ -1,2 +1,0 @@
-Coloque aqui o arquivo de áudio institucional (ex: apresentacao.mp3), referenciado em
-index.html.
