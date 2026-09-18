@@ -9,6 +9,11 @@
 - Carolina da Silva Burrego - RGM: 47793431 - github.com/carolinaburrego
 - Sophia Campos - RGM: 46887776 - github.com/sophiacampos0612
 
+## Contato do profissional
+WhatsApp: (11) 97013-1416
+E-mail: uber.rodrigues1969@gmail.com
+Instagram: beh.injetáveis
+
 ## 1. Introdução
 
 Este projeto apresenta o site institucional da **Beh Injetáveis**, uma organização real
