@@ -4,10 +4,10 @@
 **Professor:** Cid Andrade
 
 ## Integrantes do grupo
-- Luiz Henrique Rodrigues Nunes - RGM: 47402822
-- Gabriela Colombo Martins Blach - RGM: 47132281
-- Carolina da Silva Burrego - RGM: 47793431
-- Sophia Campos - RGM: 46887776
+- Luiz Henrique Rodrigues Nunes - RGM: 47402822 - github.com/luizrnunes
+- Gabriela Colombo Martins Blach - RGM: 47132281 - github.com/Colombogaby
+- Carolina da Silva Burrego - RGM: 47793431 - github.com/carolinaburrego
+- Sophia Campos - RGM: 46887776 - github.com/sophiacampos0612
 
 ## 1. Introdução
 
