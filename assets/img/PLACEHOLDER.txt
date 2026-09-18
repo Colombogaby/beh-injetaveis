@@ -1,0 +1,3 @@
+Coloque aqui as imagens reais dos procedimentos (ex: botox.jpg, enzima-capilar.jpg,
+hiperidrose.jpg, melasma.jpg) e a foto/print que comprova o contato com a organização
+(comprovante.jpg), citada no README.

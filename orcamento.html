@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento - Beh Injetáveis</title>
+</head>
+<body>
+    <header>
+        <h1>Beh Injetáveis</h1>
+        <p>Atendimento estético injetável a domicílio em São Paulo/SP</p>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paginas/sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="paginas/botox.html">Botox</a></li>
+                <li><a href="paginas/enzima-capilar.html">Enzima Capilar</a></li>
+                <li><a href="paginas/lipo-enzimatica.html">Lipo Enzimática</a></li>
+                <li><a href="paginas/enzima-muscular.html">Enzima Muscular</a></li>
+                <li><a href="paginas/hiperidrose.html">Hiperidrose</a></li>
+                <li><a href="paginas/melasma.html">Melasma</a></li>
+                <li><a href="orcamento.html" aria-current="page">Orçamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Solicitar Orçamento Personalizado</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados para contato</legend>
+
+                    <p>
+                        <label for="nome-orcamento">Nome completo</label><br>
+                        <input type="text" id="nome-orcamento" name="nome" required minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="whatsapp">WhatsApp (com DDD)</label><br>
+                        <input type="tel" id="whatsapp" name="whatsapp" required
+                               pattern="[0-9]{11}" placeholder="11987654321">
+                    </p>
+
+                    <p>
+                        <label for="cep">CEP de atendimento</label><br>
+                        <input type="text" id="cep" name="cep" required
+                               pattern="[0-9]{8}" placeholder="01000000"
+                               title="Apenas os 8 números do CEP, sem hífen">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Procedimentos de interesse</legend>
+
+                    <p>
+                        <input type="checkbox" id="p1" name="procedimento" value="botox">
+                        <label for="p1">Toxina Botulínica (Botox)</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="p2" name="procedimento" value="enzima-capilar">
+                        <label for="p2">Enzima Capilar</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="p3" name="procedimento" value="lipo-enzimatica">
+                        <label for="p3">Lipo Enzimática</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="p4" name="procedimento" value="enzima-muscular">
+                        <label for="p4">Enzima Muscular</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="p5" name="procedimento" value="hiperidrose">
+                        <label for="p5">Tratamento de Hiperidrose</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="p6" name="procedimento" value="melasma">
+                        <label for="p6">Tratamento de Melasma</label>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Beh Injetáveis - São Paulo/SP. Todos os direitos reservados.</p>
+        <p>[PREENCHER: telefone/WhatsApp] · [PREENCHER: e-mail] · [PREENCHER: redes sociais]</p>
+    </footer>
+</body>
+</html>
