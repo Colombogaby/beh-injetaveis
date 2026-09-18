@@ -4,10 +4,10 @@
 **Professor:** Cid Andrade
 
 ## Integrantes do grupo
-- Luiz Henrique Rodrigues Nunes
-- Gabriela Colombo Martins Blach
-- Carolina da Silva Burrego
-- Sophia Campos
+- Luiz Henrique Rodrigues Nunes - RGM: 47402822
+- Gabriela Colombo Martins Blach - RGM: 47132281
+- Carolina da Silva Burrego - RGM: 47793431
+- Sophia Campos - RGM: 46887776
 
 ## 1. Introdução
 
