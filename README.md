@@ -38,8 +38,8 @@ O site foi desenvolvido em HTML5 puro (sem CSS nesta etapa), com 10 páginas int
 
 - `index.html` — página inicial, com apresentação institucional, lista de procedimentos e
   recursos de áudio e vídeo
-- `contato.html` — formulário de contato com validação nativa do HTML5
-- `orcamento.html` — formulário de solicitação de orçamento, com seleção dos procedimentos
+- `paginas/contato.html` — formulário de contato com validação nativa do HTML5
+- `paginas/orcamento.html` — formulário de solicitação de orçamento, com seleção dos procedimentos
 - `paginas/sobre-nos.html` — sobre a empresa
 - `paginas/botox.html`
 - `paginas/enzima-capilar.html`
@@ -50,6 +50,11 @@ O site foi desenvolvido em HTML5 puro (sem CSS nesta etapa), com 10 páginas int
 
 Todas as páginas usam marcação semântica (`header`, `nav`, `main`, `section`, `article`,
 `footer`) e compartilham o mesmo menu de navegação.
+
+### Validação W3C
+Todas as 10 páginas foram validadas no [Nu Html Checker (W3C)](https://validator.w3.org/),
+sem erros. Um aviso identificado na página de contato (ausência de heading dentro de um
+`article`) foi corrigido adicionando um `h3`.
 
 ### Decisões e desafios
 Uma das principais decisões do grupo foi priorizar uma estrutura HTML semântica desde o
@@ -74,9 +79,9 @@ navegação — para que o desenvolvimento visual, na próxima entrega, tenha um
 ```
 beh-injetaveis/
 ├── index.html
-├── contato.html
-├── orcamento.html
 ├── paginas/
+│   ├── contato.html
+│   ├── orcamento.html
 │   ├── sobre-nos.html
 │   ├── botox.html
 │   ├── enzima-capilar.html
