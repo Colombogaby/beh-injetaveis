@@ -1,87 +1,385 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Beh Injetáveis</title>
+    <meta name="theme-color" content="#4c1c2d">
+    <meta name="description"
+        content="Conheça a Beh Injetáveis. Atendimento estético personalizado em domicílio em São Paulo/SP. Consulte os procedimentos e solicite seu orçamento.">
+
+    <title>Início | Beh Injetáveis</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Beh Injetáveis</h1>
-        <p>Atendimento estético injetável a domicílio em São Paulo/SP</p>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="index.html" aria-current="page">Início</a></li>
-                <li><a href="paginas/sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="paginas/botox.html">Botox</a></li>
-                <li><a href="paginas/enzima-capilar.html">Enzima Capilar</a></li>
-                <li><a href="paginas/lipo-enzimatica.html">Lipo Enzimática</a></li>
-                <li><a href="paginas/enzima-muscular.html">Enzima Muscular</a></li>
-                <li><a href="paginas/hiperidrose.html">Hiperidrose</a></li>
-                <li><a href="paginas/melasma.html">Melasma</a></li>
-                <li><a href="paginas/orcamento.html">Orçamento</a></li>
-                <li><a href="paginas/contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="site-header">
+        <div class="header-content">
+            <a class="brand" href="index.html" aria-label="Beh Injetáveis - Página inicial">
+                <span class="brand-name">Beh <span>Injetáveis</span></span>
+                <span class="brand-subtitle">BELEZA · CUIDADO · BEM-ESTAR</span>
+            </a>
 
-    <main>
-        <section>
-            <h2>Estética injetável no conforto da sua casa</h2>
-            <article>
-                <h3>Atendimento personalizado e seguro</h3>
-                <p>
-                    A Beh Injetáveis leva procedimentos estéticos injetáveis de alto padrão até a sua
-                    residência em São Paulo, com biossegurança, agenda flexível e atendimento individualizado.
-                    O objetivo é aproximar cuidado profissional e bem-estar, oferecendo a mesma qualidade de
-                    uma clínica com a privacidade e o conforto da sua própria casa.
-                </p>
-            </article>
-        </section>
+            <p class="header-description">
+                Atendimento estético injetável a domicílio em São Paulo/SP
+            </p>
 
-        <section>
-            <h2>Nossos Procedimentos</h2>
-            <article>
-                <h3>Conheça os tratamentos</h3>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+                <span class="menu-icon" aria-hidden="true">☰</span>
+                <span class="menu-label">Menu</span>
+            </button>
+
+            <nav id="main-navigation" aria-label="Navegação principal">
                 <ul>
-                    <li><a href="paginas/botox.html">Toxina Botulínica (Botox)</a></li>
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li><a href="paginas/sobre-nos.html">Sobre Nós</a></li>
+                    <li><a href="paginas/botox.html">Botox</a></li>
                     <li><a href="paginas/enzima-capilar.html">Enzima Capilar</a></li>
                     <li><a href="paginas/lipo-enzimatica.html">Lipo Enzimática</a></li>
                     <li><a href="paginas/enzima-muscular.html">Enzima Muscular</a></li>
-                    <li><a href="paginas/hiperidrose.html">Tratamento de Hiperidrose</a></li>
-                    <li><a href="paginas/melasma.html">Tratamento de Melasma</a></li>
+                    <li><a href="paginas/hiperidrose.html">Hiperidrose</a></li>
+                    <li><a href="paginas/melasma.html">Melasma</a></li>
+                    <li><a href="paginas/orcamento.html">Orçamento</a></li>
+                    <li><a href="paginas/contato.html">Contato</a></li>
                 </ul>
-            </article>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO: apresentação principal -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">SEU MOMENTO DE CUIDADO</span>
+
+                <h1>Estética e bem-estar no conforto da sua casa.</h1>
+
+                <p class="hero-description">
+                    A Beh Injetáveis leva atendimento estético personalizado
+                    até você, unindo praticidade, acolhimento e cuidado
+                    individualizado em São Paulo.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="paginas/orcamento.html">
+                        Solicitar orçamento <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="button button-outline" href="#procedimentos">
+                        Conhecer procedimentos
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-symbol" aria-hidden="true">✦</span>
+                    Atendimento mediante avaliação profissional e indicação adequada.
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <!-- ESPAÇO PARA IMAGEM PRINCIPAL
+                     Coloque sua foto em assets/img/hero.jpg -->
+                <img src="assets/img/hero.jpg" alt="Ambiente de estética elegante e acolhedor" class="hero-image"
+                    data-placeholder="true">
+
+                <div class="image-caption">
+                    <span class="caption-icon" aria-hidden="true">✧</span>
+                    <div>
+                        <strong>Seu cuidado, no seu espaço.</strong>
+                        <span>Uma experiência personalizada.</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Conheça um pouco mais</h2>
-            <article>
-                <h3>Apresentação em áudio</h3>
-                <p>Ouça uma breve apresentação sobre o atendimento da Beh Injetáveis.</p>
-                <audio controls>
-                    <source src="assets/audio/apresentacao.mp3" type="audio/mpeg">
-                    Seu navegador não suporta a reprodução de áudio.
-                </audio>
-                <p><small>[PREENCHER: gravar/inserir áudio institucional de ~30-60s]</small></p>
-            </article>
+        <!-- DIFERENCIAIS -->
+        <section class="intro-section">
+            <div class="section-heading">
+                <span class="eyebrow">NOSSA ESSÊNCIA</span>
+                <h2>Cuidado pensado para você</h2>
+                <p>
+                    Mais comodidade para cuidar de si, com atenção às suas
+                    necessidades e respeito à sua individualidade.
+                </p>
+            </div>
 
-            <article>
-                <h3>Vídeo institucional</h3>
-                <p>Veja como funciona o atendimento home care.</p>
-                <video controls width="480">
-                    <source src="assets/video/institucional.mp4" type="video/mp4">
-                    Seu navegador não suporta a reprodução de vídeo.
-                </video>
-                <p><small>[PREENCHER: inserir vídeo institucional]</small></p>
-            </article>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">♡</span>
+                    <h3>Atendimento individualizado</h3>
+                    <p>
+                        Atenção às suas necessidades, com orientação
+                        e avaliação antes de qualquer procedimento.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✧</span>
+                    <h3>Conforto e praticidade</h3>
+                    <p>
+                        Atendimento domiciliar em São Paulo, conforme
+                        disponibilidade e condições adequadas.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">◇</span>
+                    <h3>Cuidado responsável</h3>
+                    <p>
+                        Priorizamos a avaliação profissional, a biossegurança
+                        e a indicação adequada para cada pessoa.
+                    </p>
+                </article>
+            </div>
         </section>
 
+        <!-- PROCEDIMENTOS -->
+        <section class="procedures-section" id="procedimentos">
+            <div class="section-heading">
+                <span class="eyebrow">CONHEÇA NOSSOS SERVIÇOS</span>
+                <h2>Nossos procedimentos</h2>
+                <p>
+                    Conheça as opções de atendimento e descubra, com orientação
+                    profissional, qual cuidado pode ser adequado para você.
+                </p>
+            </div>
+
+            <div class="procedures-grid">
+                <article class="procedure-card">
+                    <a class="procedure-image-link" href="paginas/botox.html"
+                        aria-label="Saiba mais sobre toxina botulínica">
+                        <img src="assets/img/botox.jpg" alt="Imagem ilustrativa do procedimento de toxina botulínica"
+                            loading="lazy" data-placeholder="true">
+                    </a>
+                    <div class="procedure-info">
+                        <span class="procedure-number">01</span>
+                        <h3>Toxina Botulínica (Botox)</h3>
+                        <p>Informações sobre o procedimento, avaliação e cuidados.</p>
+                        <a class="text-link" href="paginas/botox.html">
+                            Conhecer procedimento <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="procedure-card">
+                    <a class="procedure-image-link" href="paginas/enzima-capilar.html"
+                        aria-label="Saiba mais sobre enzima capilar">
+                        <img src="assets/img/enzima-capilar.jpg" alt="Imagem ilustrativa de cuidado capilar"
+                            loading="lazy" data-placeholder="true">
+                    </a>
+                    <div class="procedure-info">
+                        <span class="procedure-number">02</span>
+                        <h3>Enzima Capilar</h3>
+                        <p>Conheça a proposta do atendimento e suas indicações.</p>
+                        <a class="text-link" href="paginas/enzima-capilar.html">
+                            Conhecer procedimento <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="procedure-card">
+                    <a class="procedure-image-link" href="paginas/lipo-enzimatica.html"
+                        aria-label="Saiba mais sobre lipo enzimática">
+                        <img src="assets/img/lipo-enzimatica.jpg" alt="Imagem ilustrativa de atendimento estético"
+                            loading="lazy" data-placeholder="true">
+                    </a>
+                    <div class="procedure-info">
+                        <span class="procedure-number">03</span>
+                        <h3>Lipo Enzimática</h3>
+                        <p>Saiba mais sobre a avaliação e os cuidados envolvidos.</p>
+                        <a class="text-link" href="paginas/lipo-enzimatica.html">
+                            Conhecer procedimento <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="procedure-card">
+                    <a class="procedure-image-link" href="paginas/enzima-muscular.html"
+                        aria-label="Saiba mais sobre enzima muscular">
+                        <img src="assets/img/enzima-muscular.jpg" alt="Imagem ilustrativa de cuidado corporal"
+                            loading="lazy" data-placeholder="true">
+                    </a>
+                    <div class="procedure-info">
+                        <span class="procedure-number">04</span>
+                        <h3>Enzima Muscular</h3>
+                        <p>Consulte informações e orientações sobre o atendimento.</p>
+                        <a class="text-link" href="paginas/enzima-muscular.html">
+                            Conhecer procedimento <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="procedure-card">
+                    <a class="procedure-image-link" href="paginas/hiperidrose.html"
+                        aria-label="Saiba mais sobre hiperidrose">
+                        <img src="assets/img/hiperidrose.jpg" alt="Imagem ilustrativa de cuidado especializado"
+                            loading="lazy" data-placeholder="true">
+                    </a>
+                    <div class="procedure-info">
+                        <span class="procedure-number">05</span>
+                        <h3>Tratamento de Hiperidrose</h3>
+                        <p>Informações sobre avaliação e possibilidades de tratamento.</p>
+                        <a class="text-link" href="paginas/hiperidrose.html">
+                            Conhecer procedimento <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="procedure-card">
+                    <a class="procedure-image-link" href="paginas/melasma.html" aria-label="Saiba mais sobre melasma">
+                        <img src="assets/img/melasma.jpg" alt="Imagem ilustrativa de cuidados com a pele" loading="lazy"
+                            data-placeholder="true">
+                    </a>
+                    <div class="procedure-info">
+                        <span class="procedure-number">06</span>
+                        <h3>Tratamento de Melasma</h3>
+                        <p>Conheça orientações sobre avaliação e cuidados com a pele.</p>
+                        <a class="text-link" href="paginas/melasma.html">
+                            Conhecer procedimento <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-cta">
+                <p>Tem dúvidas sobre qual atendimento procurar?</p>
+                <a class="button button-primary" href="paginas/contato.html">
+                    Fale conosco
+                </a>
+            </div>
+        </section>
+
+        <!-- SOBRE A EXPERIÊNCIA -->
+        <section class="experience-section">
+            <div class="experience-visual">
+                <!-- ESPAÇO PARA SEGUNDA IMAGEM
+                     Coloque sua foto em assets/img/atendimento.jpg -->
+                <img src="assets/img/atendimento.jpg" alt="Imagem ilustrativa de atendimento estético acolhedor"
+                    loading="lazy" data-placeholder="true">
+                <span class="visual-decoration" aria-hidden="true">B.</span>
+            </div>
+
+            <div class="experience-content">
+                <span class="eyebrow">BEH INJETÁVEIS</span>
+                <h2>Uma experiência que começa com escuta e cuidado.</h2>
+                <p>
+                    Acreditamos que cada pessoa merece atenção individual.
+                    Por isso, buscamos oferecer um atendimento acolhedor,
+                    com informações claras sobre os procedimentos e seus cuidados.
+                </p>
+                <p>
+                    A realização de qualquer procedimento depende de avaliação
+                    profissional, indicação adequada e condições seguras.
+                </p>
+                <a class="text-link" href="paginas/sobre-nos.html">
+                    Conheça nossa história <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ÁUDIO E VÍDEO -->
+        <section class="media-section">
+            <div class="section-heading">
+                <span class="eyebrow">CONHEÇA MELHOR</span>
+                <h2>Um pouco mais sobre nós</h2>
+                <p>
+                    Em breve, você poderá conhecer nossa apresentação
+                    e entender como funciona o atendimento domiciliar.
+                </p>
+            </div>
+
+            <div class="media-grid">
+                <article class="media-card">
+                    <div class="media-card-heading">
+                        <span class="media-icon" aria-hidden="true">♫</span>
+                        <div>
+                            <span class="eyebrow">OUÇA</span>
+                            <h3>Apresentação em áudio</h3>
+                        </div>
+                    </div>
+
+                    <p>Ouça uma breve apresentação sobre a Beh Injetáveis.</p>
+
+                    <audio controls preload="none">
+                        <source src="assets/audio/apresentacao.mp3" type="audio/mpeg">
+                        Seu navegador não suporta a reprodução de áudio.
+                    </audio>
+
+                    <small>
+                        Adicione sua gravação em
+                        <code>assets/audio/apresentacao.mp3</code>.
+                    </small>
+                </article>
+
+                <article class="media-card">
+                    <div class="media-card-heading">
+                        <span class="media-icon" aria-hidden="true">▷</span>
+                        <div>
+                            <span class="eyebrow">ASSISTA</span>
+                            <h3>Vídeo institucional</h3>
+                        </div>
+                    </div>
+
+                    <p>Veja como funciona a proposta de atendimento home care.</p>
+
+                    <video controls preload="metadata" poster="assets/img/video-capa.jpg">
+                        <source src="assets/video/institucional.mp4" type="video/mp4">
+                        Seu navegador não suporta a reprodução de vídeo.
+                    </video>
+
+                    <small>
+                        Adicione seu vídeo em
+                        <code>assets/video/institucional.mp4</code>.
+                    </small>
+                </article>
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="contact-banner">
+            <div>
+                <span class="eyebrow">VAMOS CONVERSAR?</span>
+                <h2>Seu cuidado começa com uma boa orientação.</h2>
+                <p>Entre em contato para tirar dúvidas e consultar disponibilidade.</p>
+            </div>
+            <a class="button button-light" href="paginas/orcamento.html">
+                Solicitar orçamento <span aria-hidden="true">↗</span>
+            </a>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Beh Injetáveis - São Paulo/SP. Todos os direitos reservados.</p>
-        <p>(11) 97013-1416 · uber.rodrigues1969@gmail.com · instagram: beh.injetáveis</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a class="footer-brand" href="index.html">Beh Injetáveis</a>
+            <p>Atendimento estético domiciliar em São Paulo/SP.</p>
+
+            <div class="footer-contact">
+                <a href="tel:+5511970131416">(11) 97013-1416</a>
+                <span aria-hidden="true">·</span>
+                <a href="mailto:uber.rodrigues1969@gmail.com">
+                    uber.rodrigues1969@gmail.com
+                </a>
+                <span aria-hidden="true">·</span>
+                <a href="https://www.instagram.com/beh.injetaveis/" target="_blank" rel="noopener noreferrer">
+                    Instagram: @beh.injetaveis
+                </a>
+            </div>
+
+            <p class="footer-disclaimer">
+                Os procedimentos dependem de avaliação, indicação profissional
+                e análise individual. As informações deste site não substituem
+                uma consulta profissional.
+            </p>
+
+            <div class="footer-bottom">
+                <p>&copy; <span data-current-year>2026</span> Beh Injetáveis.
+                    Todos os direitos reservados.</p>
+                <a href="#topo" data-back-to-top>Voltar ao topo ↑</a>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
