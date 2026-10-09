@@ -272,11 +272,13 @@ small {
     width: min(var(--container), calc(100% - 60px));
     margin: 0 auto;
     padding: 28px 0 21px;
+    text-align: center;
 }
 
 .brand {
     display: inline-flex;
     flex-direction: column;
+    align-items: center;
     gap: 3px;
     color: var(--white);
 }
@@ -318,6 +320,7 @@ small {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 7px;
 
     margin: 0;
