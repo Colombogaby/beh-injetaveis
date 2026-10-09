@@ -252,7 +252,7 @@ grupo.
 
 O grupo usou duas ferramentas de IA ao longo do projeto:
 
-**ChatGPT (OpenAI)**
+**ChatGPT (OpenAI) — versão gratuita, com o modelo padrão do site**
 - Apoio na construção do CSS: o grupo usou o ChatGPT para tirar dúvidas enquanto escrevia o
   estilo do site e para revisar o código aos poucos, conferindo se não estava fazendo nada
   errado.
