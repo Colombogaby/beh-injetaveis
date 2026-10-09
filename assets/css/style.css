@@ -1256,8 +1256,18 @@ code {
 }
 
 .footer-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: #f8eaf0;
     overflow-wrap: anywhere;
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    fill: currentColor;
 }
 
 .footer-contact a:hover {
