@@ -253,8 +253,9 @@ grupo.
 O grupo usou duas ferramentas de IA ao longo do projeto:
 
 **ChatGPT (OpenAI)**
-- **(completar: em quais etapas o grupo usou o ChatGPT e com qual modelo — por exemplo,
-  elaboração do roteiro da entrevista, revisão de textos, dúvidas de CSS)**
+- Apoio na construção do CSS: o grupo usou o ChatGPT para tirar dúvidas enquanto escrevia o
+  estilo do site e para revisar o código aos poucos, conferindo se não estava fazendo nada
+  errado.
 
 **Claude (Anthropic) — modelo Claude Opus 5.5**
 - Comparar o repositório com o enunciado da Entrega 2 e listar o que faltava.
