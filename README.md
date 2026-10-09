@@ -104,3 +104,4 @@ beh-injetaveis/
 
 - Luiz Henrique Rodrigues Nunes
 - Carolina da Silva Burrego
+- Sophia Campos
