@@ -52,9 +52,37 @@ Todas as páginas usam marcação semântica (`header`, `nav`, `main`, `section`
 `footer`) e compartilham o mesmo menu de navegação.
 
 ### Validação W3C
-Todas as 10 páginas foram validadas no [Nu Html Checker (W3C)](https://validator.w3.org/),
+Na Entrega 1, todas as 10 páginas foram validadas no [Nu Html Checker (W3C)](https://validator.w3.org/),
 sem erros. Um aviso identificado na página de contato (ausência de heading dentro de um
 `article`) foi corrigido adicionando um `h3`.
+
+Na Entrega 2, depois de adicionar o CSS e o JavaScript, o site foi validado novamente,
+usando o endereço publicado no GitHub Pages:
+
+- **HTML:** as 10 páginas passaram no [Nu Html Checker](https://validator.w3.org/) sem erros
+  nem avisos. Na revalidação, o checker apontou que as páginas internas não tinham um título
+  de nível 1. O título de cada página passou a ser um `h1` e os subtítulos subiram um nível,
+  mantendo a hierarquia correta (`h1` → `h2`) sem alterar o visual.
+- **CSS:** a folha de estilo `assets/css/style.css` passou no
+  [Serviço de Validação de CSS do W3C](https://jigsaw.w3.org/css-validator/) sem erros
+  (CSS nível 3 + SVG). Os alertas exibidos são apenas informativos (uso de variáveis CSS e
+  `@import` de fontes) e não indicam problemas.
+
+**Comprovação** (prints em `assets/img/validacao/`):
+
+| Página | Print |
+|---|---|
+| Início (`index.html`) | [html-index.png](assets/img/validacao/html-index.png) · [endereço raiz](assets/img/validacao/html-site-raiz.png) |
+| Sobre Nós | [html-sobre-nos.png](assets/img/validacao/html-sobre-nos.png) |
+| Botox | [html-botox.png](assets/img/validacao/html-botox.png) |
+| Enzima Capilar | [html-enzima-capilar.png](assets/img/validacao/html-enzima-capilar.png) |
+| Lipo Enzimática | [html-lipo-enzimatica.png](assets/img/validacao/html-lipo-enzimatica.png) |
+| Enzima Muscular | [html-enzima-muscular.png](assets/img/validacao/html-enzima-muscular.png) |
+| Hiperidrose | [html-hiperidrose.png](assets/img/validacao/html-hiperidrose.png) |
+| Melasma | [html-melasma.png](assets/img/validacao/html-melasma.png) |
+| Orçamento | [html-orcamento.png](assets/img/validacao/html-orcamento.png) |
+| Contato | [html-contato.png](assets/img/validacao/html-contato.png) |
+| CSS (`style.css`) | [css-style.png](assets/img/validacao/css-style.png) |
 
 ### Decisões e desafios
 Uma das principais decisões do grupo foi priorizar uma estrutura HTML semântica desde o
@@ -99,6 +127,32 @@ beh-injetaveis/
 ## Site hospedado
 
 [Acesse o site aqui](https://colombogaby.github.io/beh-injetaveis/)
+
+## Domínio
+
+O site está publicado no GitHub Pages, mas a Beh Injetáveis ainda não possui um domínio
+próprio. O domínio escolhido pelo grupo é **`behinjetaveis.com.br`**: ele repete exatamente
+o nome da marca (o mesmo usado no Instagram), é curto, fácil de lembrar, e a terminação
+`.com.br` indica uma empresa brasileira, o que combina com um atendimento local em São Paulo.
+
+**Pesquisa de disponibilidade:** a consulta no [Registro.br](https://registro.br), órgão
+responsável pelos domínios `.br`, mostrou que o domínio está **disponível para registro**.
+
+![Consulta de disponibilidade no Registro.br](assets/img/dominio/registro-br-behinjetaveis.png)
+
+**Custo** (valores exibidos na consulta): R$ 40,00 por 1 ano, R$ 76,00 por 2 anos ou
+R$ 184,00 por 5 anos.
+
+**Processo de aquisição:**
+
+1. A responsável pela Beh Injetáveis cria uma conta no Registro.br com o próprio CPF ou CNPJ,
+   para que o domínio fique em nome da dona do negócio, e não do grupo.
+2. Pesquisa `behinjetaveis.com.br`, clica em **Registrar**, escolhe o período (1, 2 ou 5 anos)
+   e faz o pagamento.
+3. Após a confirmação do pagamento, configura no painel do Registro.br os registros de DNS
+   apontando para os servidores do GitHub Pages.
+4. No repositório, em **Settings → Pages → Custom domain**, informa `behinjetaveis.com.br` e
+   ativa o HTTPS. A partir daí, o site passa a abrir pelo domínio próprio.
 
 ## Colaboradores
 
