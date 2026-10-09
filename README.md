@@ -260,11 +260,8 @@ O grupo usou duas ferramentas de IA ao longo do projeto:
 - Comparar o repositório com o enunciado da Entrega 2 e listar o que faltava.
 - Criar os ícones em SVG do rodapé, adicionar o `article` na página de orçamento e remover o
   CSS duplicado.
-- Rodar o validador do W3C antes do envio e corrigir a hierarquia de títulos.
-- Extrair e redimensionar as fotos dos procedimentos e inseri-las nas páginas.
 - Pesquisar sites de estética para a análise de layout, montar os testes de paleta (com o
-  cálculo de contraste) e de tipografia, e consultar a disponibilidade do domínio.
-- Ajudar na redação deste README.
+  cálculo de contraste) e de tipografia.
 
 **Motivação:** usamos a IA para ganhar tempo nas tarefas repetitivas e técnicas (validação,
 tratamento de imagens, ajustes de código) e para ter um apoio na pesquisa e nos testes
