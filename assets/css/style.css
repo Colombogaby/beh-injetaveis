@@ -546,16 +546,16 @@ button:active {
 
 .button-outline {
     color: var(--wine-900);
-    background: linear-gradient(135deg, var(--rose-100), #e4bfca);
-    border-color: var(--rose-400);
-    box-shadow: 0 8px 20px rgba(105, 39, 62, .12);
+    background: linear-gradient(135deg, #fbf3e3, #f3e6d4);
+    border-color: var(--gold-400);
+    box-shadow: 0 8px 20px rgba(170, 133, 73, .16);
 }
 
 .button-outline:hover {
     color: var(--wine-900);
-    background: linear-gradient(135deg, var(--rose-200), var(--rose-300));
-    border-color: var(--wine-500);
-    box-shadow: 0 10px 25px rgba(105, 39, 62, .18);
+    background: linear-gradient(135deg, var(--gold-100), #ecd9b4);
+    border-color: var(--gold-500);
+    box-shadow: 0 10px 25px rgba(170, 133, 73, .24);
 }
 
 .button-light {
@@ -774,6 +774,12 @@ main li a:not([class]):hover {
 
 .intro-section {
     padding: 70px 0 65px;
+}
+
+/* Fundo champagne da seção "Nossa essência" */
+body > main:not(.site-header main) section.intro-section {
+    background: linear-gradient(135deg, #fbf3e3, #f3e6d4);
+    border-color: #ecdcc4;
 }
 
 .features-grid {
