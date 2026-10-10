@@ -1797,6 +1797,71 @@ legend {
     font-size: 1.4rem;
 }
 
+/* Procedimentos de interesse (orçamento) em cartões clicáveis */
+.procedure-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.procedure-options p {
+    position: relative;
+    margin: 0;
+}
+
+.procedure-options input[type="checkbox"] {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    z-index: 1;
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.procedure-options label {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 54px;
+    margin: 0;
+    padding: 14px 16px 14px 47px;
+
+    font-weight: 600;
+    background: #fffdfb;
+    border: 1px solid #e6d5db;
+    border-radius: 14px;
+    cursor: pointer;
+
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.procedure-options label:hover {
+    border-color: var(--rose-400);
+}
+
+.procedure-options input:checked + label {
+    background: linear-gradient(135deg, var(--rose-100), #f3dde3);
+    border-color: var(--wine-700);
+    box-shadow: 0 6px 16px rgba(105, 39, 62, .12);
+}
+
+.procedure-options input:focus-visible + label {
+    outline: 2px solid var(--wine-500);
+    outline-offset: 2px;
+}
+
+@media (max-width: 680px) {
+    .procedure-options {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ============================================================
    18. ANIMAÇÕES
    ============================================================ */
