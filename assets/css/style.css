@@ -776,6 +776,22 @@ main li a:not([class]):hover {
     padding: 70px 0 65px;
 }
 
+/* Banner de contato: mantém o fundo vinho (a regra genérica de seções forçava branco) */
+body > main:not(.site-header main) section.contact-banner {
+    background:
+        radial-gradient(ellipse at 95% 0%, rgba(223, 181, 193, .18), transparent 35%),
+        linear-gradient(120deg, var(--wine-950), var(--wine-800));
+    border-color: rgba(200, 165, 104, .28);
+}
+
+body > main:not(.site-header main) section.contact-banner h2 {
+    color: var(--white);
+}
+
+body > main:not(.site-header main) section.contact-banner p {
+    color: #ead7de;
+}
+
 /* Fundo champagne da seção "Nossa essência" */
 body > main:not(.site-header main) section.intro-section {
     background: linear-gradient(135deg, #fbf3e3, #f3e6d4);
