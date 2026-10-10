@@ -309,11 +309,58 @@ small {
     letter-spacing: .28em;
 }
 
+/* Barra superior (topbar) */
+.topbar {
+    padding: 9px 20px;
+    text-align: center;
+    background: #1c0a11;
+    border-bottom: 1px solid rgba(217, 189, 133, .18);
+}
+
 .header-description {
-    margin: 14px 0 24px;
-    color: #e7cfd6;
-    font-size: .83rem;
-    letter-spacing: .025em;
+    margin: 0;
+    color: #f1dde3;
+    font-size: .76rem;
+    letter-spacing: .06em;
+}
+
+/* Divisor decorativo entre a logo e o menu */
+.header-divider {
+    position: relative;
+    width: min(520px, 80%);
+    height: 12px;
+    margin: 20px auto 18px;
+}
+
+.header-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(217, 189, 133, .55) 30%,
+            rgba(239, 213, 220, .8) 45%,
+            transparent 45%,
+            transparent 55%,
+            rgba(239, 213, 220, .8) 55%,
+            rgba(217, 189, 133, .55) 70%,
+            transparent 100%);
+}
+
+.header-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: 1px solid var(--gold-300);
+    box-shadow: 0 0 10px rgba(217, 189, 133, .45);
 }
 
 .site-header nav ul {
@@ -1798,10 +1845,18 @@ legend {
         letter-spacing: .2em;
     }
 
+    .topbar {
+        padding: 8px 14px;
+    }
+
     .header-description {
-        margin: 13px 0 17px;
-        font-size: .78rem;
-        line-height: 1.6;
+        font-size: .7rem;
+        line-height: 1.5;
+        letter-spacing: .03em;
+    }
+
+    .header-divider {
+        margin: 16px auto 14px;
     }
 
     .menu-toggle {
