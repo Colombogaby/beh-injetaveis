@@ -545,17 +545,17 @@ button:active {
 }
 
 .button-outline {
-    color: var(--wine-800);
-    background: rgba(255, 255, 255, .65);
-    border-color: #d8b8c3;
-    box-shadow: none;
+    color: var(--wine-900);
+    background: linear-gradient(135deg, var(--rose-100), #e4bfca);
+    border-color: var(--rose-400);
+    box-shadow: 0 8px 20px rgba(105, 39, 62, .12);
 }
 
 .button-outline:hover {
     color: var(--wine-900);
-    background: var(--white);
-    border-color: var(--gold-400);
-    box-shadow: var(--shadow-soft);
+    background: linear-gradient(135deg, var(--rose-200), var(--rose-300));
+    border-color: var(--wine-500);
+    box-shadow: 0 10px 25px rgba(105, 39, 62, .18);
 }
 
 .button-light {
