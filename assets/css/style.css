@@ -776,6 +776,26 @@ main li a:not([class]):hover {
     padding: 70px 0 65px;
 }
 
+/* Fundos próprios das seções da página inicial (a regra genérica de seções forçava branco) */
+body > main:not(.site-header main) section.hero {
+    background:
+        radial-gradient(ellipse at 90% 5%, rgba(223, 181, 193, .4), transparent 32%),
+        radial-gradient(ellipse at 0% 100%, rgba(217, 189, 133, .13), transparent 38%),
+        linear-gradient(135deg, #fffdfb, #f8ecef);
+}
+
+body > main:not(.site-header main) section.procedures-section {
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(223, 181, 193, .22), transparent 30%),
+        linear-gradient(140deg, #faf3ef, #f6eeeb);
+}
+
+body > main:not(.site-header main) section.media-section {
+    background:
+        radial-gradient(ellipse at 0% 0%, rgba(239, 213, 220, .2), transparent 35%),
+        var(--white);
+}
+
 /* Banner de contato: mantém o fundo vinho (a regra genérica de seções forçava branco) */
 body > main:not(.site-header main) section.contact-banner {
     background:
