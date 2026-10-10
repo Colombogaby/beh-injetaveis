@@ -1086,6 +1086,24 @@ body > main:not(.site-header main) section.intro-section {
 
 .experience-content .text-link {
     margin-top: 9px;
+    padding: 13px 26px;
+    color: var(--wine-900);
+    font-size: .9rem;
+    background: linear-gradient(135deg, #fbf3e3, #f3e6d4);
+    border: 1px solid var(--gold-400);
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(170, 133, 73, .16);
+    transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.experience-content .text-link:hover {
+    color: var(--wine-900);
+    background: linear-gradient(135deg, var(--gold-100), #ecd9b4);
+    border-color: var(--gold-500);
+    box-shadow: 0 10px 25px rgba(170, 133, 73, .24);
 }
 
 /* ============================================================
