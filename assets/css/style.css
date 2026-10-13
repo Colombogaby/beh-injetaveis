@@ -1919,6 +1919,262 @@ main.proc-page .proc-other:hover img {
 }
 
 /* ============================================================
+   16C. PÁGINA SOBRE NÓS
+   ============================================================ */
+
+body > main.about-page {
+    width: min(1120px, calc(100% - 60px));
+}
+
+main.about-page section,
+main.about-page .about-duo {
+    margin-bottom: 26px;
+}
+
+main.about-page .about-intro {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: clamp(28px, 5vw, 56px);
+    align-items: center;
+}
+
+main.about-page .about-photo {
+    min-height: 360px;
+    border-radius: 200px 200px 26px 26px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+main.about-page .about-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+main.about-page .about-text h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+main.about-page .about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+main.about-page .about-tags li {
+    margin: 0;
+    padding: 7px 15px;
+    color: var(--wine-800);
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    background: linear-gradient(135deg, #fbf3e3, #f3e6d4);
+    border: 1px solid #ecdcc4;
+    border-radius: 999px;
+}
+
+main.about-page .about-block h2,
+main.about-page .about-cta h2 {
+    margin: 0 0 22px;
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+}
+
+/* Passo a passo numerado */
+main.about-page .about-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: passo;
+}
+
+main.about-page .about-steps li {
+    position: relative;
+    margin: 0;
+    padding: 50px 18px 18px;
+    background: #fffaf8;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    counter-increment: passo;
+}
+
+main.about-page .about-steps li::before {
+    content: counter(passo);
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    color: var(--white);
+    font-size: .85rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--wine-600), var(--wine-800));
+    border-radius: 50%;
+}
+
+main.about-page .about-steps h3,
+main.about-page .about-features h3 {
+    margin: 0 0 6px;
+    font-size: 1.25rem;
+}
+
+main.about-page .about-steps p,
+main.about-page .about-features p {
+    margin: 0;
+    font-size: .86rem;
+    line-height: 1.7;
+}
+
+/* Diferenciais */
+main.about-page .about-features {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+main.about-page .about-features article {
+    margin: 0;
+    padding: 20px 18px;
+    text-align: center;
+    background: #fffaf8;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+}
+
+main.about-page .about-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+    color: var(--wine-700);
+    background: var(--rose-100);
+    border-radius: 14px;
+}
+
+main.about-page .about-icon svg {
+    width: 23px;
+    height: 23px;
+}
+
+/* Onde atendemos + mais procurados */
+main.about-page .about-duo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 26px;
+}
+
+main.about-page .about-duo section {
+    margin: 0;
+}
+
+body > main:not(.site-header main) section.about-area {
+    background: linear-gradient(135deg, #fbf3e3, #f3e6d4);
+    border-color: #ecdcc4;
+}
+
+main.about-page .about-icon-lg {
+    display: grid;
+}
+
+main.about-page .about-area .about-icon {
+    color: var(--gold-500);
+    background: var(--white);
+}
+
+main.about-page .about-area p {
+    margin: 0;
+}
+
+main.about-page .about-favorites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+main.about-page .about-favorites a {
+    color: var(--wine-900);
+    font-weight: 600;
+    text-align: center;
+}
+
+main.about-page .about-favorites img {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+main.about-page .about-favorites a:hover img {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+}
+
+/* Chamada final em vinho */
+body > main:not(.site-header main) section.about-cta {
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 90% 0%, rgba(223, 181, 193, .2), transparent 40%),
+        linear-gradient(120deg, var(--wine-950), var(--wine-800));
+    border-color: rgba(200, 165, 104, .28);
+}
+
+body > main:not(.site-header main) section.about-cta h2 {
+    margin-bottom: 8px;
+    color: var(--white);
+}
+
+body > main:not(.site-header main) section.about-cta p {
+    color: #ead7de;
+}
+
+main.about-page .about-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    main.about-page .about-intro,
+    main.about-page .about-duo {
+        grid-template-columns: 1fr;
+    }
+
+    main.about-page .about-photo {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    main.about-page .about-steps,
+    main.about-page .about-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    body > main.about-page {
+        width: calc(100% - 28px);
+    }
+
+    main.about-page .about-steps,
+    main.about-page .about-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
    17. FORMULÁRIOS — ORÇAMENTO E CONTATO
    ============================================================ */
 
